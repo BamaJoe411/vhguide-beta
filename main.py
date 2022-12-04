@@ -20,7 +20,7 @@ def main():
             new_message = message.replace("h", "***h***").replace("H", "***H***")
             await ctx.respond(f"{new_message}")
         else:
-            await ctx.respond("You cant use this command here. must be in channel <#937394251556356147>", ephemeral=True)
+            await ctx.respond("You cant use this command here. must be in channel <#923430896487506002>", ephemeral=True)
 
     bot.run(os.getenv('TOKEN'))
 
