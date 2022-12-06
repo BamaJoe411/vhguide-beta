@@ -44,7 +44,8 @@ def main():
             would just be downright silly! Please head on over to <#923430896487506002>
             and use the command there as much as your heart desires.
             """
-            await interaction.response.send_message(error_msg, ephemeral=True)
+            error_msg_hified = error_msg.replace("h", "***h***").replace("H", "***H***")
+            await interaction.response.send_message(error_msg_hified, ephemeral=True)
 
     @client.tree.command()
     @app_commands.checks.has_permissions(administrator=True)
